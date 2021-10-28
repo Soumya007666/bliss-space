@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Paytone+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--color1: #fff;
+	--color2: #000;
+	--color3: #f59d0e;
+	--color4: #BA6A30;
+	--color5: #0F2D8C;
+	--font1: 'Paytone One', sans-serif;
+	--font2: 'Balsamiq Sans', cursive;;
+}
+
+
+/* Navbar Styles */
+.navbar {
+	padding: 0;
+	padding: 20px 0;
+	background: transparent;
+	width: 100%;
+	transition: background-color .5s ease;
+}
+.navbar-brand img {
+	width: 100px;
+	height: 100px;
+}
+.navbar-expand-md .navbar-nav .nav-item .nav-link {
+	padding: 0;
+	padding: 0 25px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: var(--color1);
+	transition: .5s ease;
+}
+a.btn {
+	background: var(--color3);
+	color: var(--color1);
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+a.btn:hover {
+	color: var(--color1);
+	cursor: pointer;
+}
+.navbar-toggler-icon {
+	background-image: url("../images/mobile-menu-icon.png");
+}
+nav.navbar.scrolled {
+	background: var(--color1);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.change.linkcolor {
+	color: var(--color2)!important;
+}
+.change.linkcolor:hover {
+	color: var(--color3)!important;
+}
+
+/* Banner Area Styles */
+.banner {
+	width: 100%;
+	height: 650px;
+	background: url(../images/banner-home.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.banner .banner-info {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	width: 45%;
+}
+.banner .banner-info h2,
+.banner .banner-info h3 {
+	color: var(--color1);
+}
+.banner .banner-info h2 {
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.banner .banner-info h3 {
+	font-family: var(--font1);
+	text-transform: capitalize;
+	font-size: 50px;
+}
+.banner .banner-info h3 span {
+	color: var(--color3);
+}
+
+@media screen and (max-width: 767px) {
+
+	.banner-info {
+		width: 100%!important;
+	}
+
+}
+/* End of Banner Area styles */
+
+/* Sector Area Styles */
+
+
+/* End of Sector Area Styles */
+
+/* Deliverables Styles */
+.deliverables {
+	padding: 60px 0;
+}
+.deliverables .deliverable-info {
+	text-align: center;
+	background: #ddd;
+	padding: 30px;
+}
+.deliverables .pad {
+	padding-bottom: 15px;
+}
+.deliverables .deliverable-info span {
+	color: var(--color3);
+}
+.deliverables .deliverable-info h2 {
+	font-family: var(--font1);
+	font-size: 45px;
+	text-align: left;
+}
+.deliverables .deliverable-info h4 {
+	font-family: var(--font1);
+}
+.deliverables .deliverable-info i {
+	font-size: 50px;
+	color: var(--color3);
+}
+
+
+/* Discover button Styles */
+.discover {
+	width: 100%;
+	height: 650px;
+	background: url(../images/discover-banner.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.discover .discover-info {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 40%;
+}
+.discover .discover-info h3 {
+	font-family: var(--font1);
+	font-size: 45px;
+}
+.discover .discover-info span {
+	color: var(--color3);
+}
+.discover .discover-info a {
+	color: var(--color1);
+	font-size: 30px;
+	background: var(--color3);
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+
+	.discover .discover-info {
+		width: 100%;
+	}
+}
+/* End of Discover button Styles */
+
+
+/* Blog Area Styles */
+.blog {
+	text-align: center;
+	padding: 80px 0;
+}
+.blog h2 {
+	font-family: var(--font1);
+	color: var(--color3);
+	font-size: 50px;
+}
+.blog p {
+	font-family: var(--font1);
+	font-size: 40px;
+}
+.blog .blog-card {
+	background: var(--color1);
+	box-shadow: -5px 9px 16px -1px rgba(0,0,0,0.37);
+-webkit-box-shadow: -5px 9px 16px -1px rgba(0,0,0,0.37);
+-moz-box-shadow: -5px 9px 16px -1px rgba(0,0,0,0.37);
+padding-bottom: 20px;
+}
+.blog .blog-card img {
+	height: 200px;
+	width: 100%;
+}
+.blog .blog-card h4 {
+	padding: 20px 40px;
+}
+.blog .blog-card .likes ul li {
+	list-style: none;
+	display: inline-block;
+}
+.blog .blog-card .likes ul li a {
+	color: var(--color4);
+	text-decoration: none;
+}
+.blog .blog-card .blog-info p {
+	font-size: 20px;
+	text-align: left;
+	font-weight: 300;
+	padding: 10px 10px;
+}
+.blog-card .btn.blog-btn {
+	background: var(--color5);
+	padding: 10px 50px;
+	transition: .5s ease;
+}
+.blog-card .btn.blog-btn:hover {
+	background: var(--color3);
+}
+/* End of Blog Area Styles */
+
+
+/* Footer Styles */
+footer {
+	background: var(--color2);
+	padding: 70px 0;
+}
+footer .mail-area h2,
+footer .mail-area p {
+	color: var(--color1);
+	font-family: var(--font2);
+}
+footer .mail-area h2 {
+	font-size: 40px;
+}
+footer .mail-area img {
+	width: 200px;
+	height: 200px;
+}
+form input[type="email"] {
+	width: 100%;
+	height: 60px;
+	padding: 0 30px;
+	width: calc(100% - 60px);
+	border-radius: 50px;
+}
+footer .footer-info h3 {
+	color: var(--color1);
+	font-family: var(--font2);
+	text-transform: capitalize;
+	font-size: 30px;
+}
+ul.footer-list li {
+	list-style: none;
+	padding: 5px 0;
+}
+ul.footer-list li a {
+	color: var(--color1);
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: .5s ease;
+}
+ul.footer-list li a:hover {
+	color: var(--color3);
+}
+footer .social-icons {
+	float: right;
+}
+footer .social-icons ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 20px;
+}
+footer .social-icons ul li a {
+	color: var(--color1);
+	background: var(--color3);
+	padding: 12px;
+	border-radius: 50px;
+	width: 42px;
+	height: 42px;
+	display: block;
+	text-align: center;
+	line-height: 20px;
+}
+/* End of Footer Styles */
+
+/* Footer Bottom Styles */
+.footer-bottom {
+	background: var(--color2);
+	text-align: right;
+	padding: 30px 0;
+}
+
+.footer-bottom ul.bottom-list li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 30px;
+}
+.footer-bottom ul.bottom-list li a {
+	color: var(--color1);
+	text-decoration: none;
+	transition: .5s ease;
+}
+.footer-bottom ul.bottom-list li a:hover {
+	color: var(--color3);
+}
+/* End of Footer Bottom Styles */
